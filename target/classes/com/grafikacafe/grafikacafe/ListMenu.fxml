@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.grafikacafe.grafikacafe.ListMenu">
+   <children>
+      <TableView fx:id="menutable" layoutX="127.0" layoutY="179.0" prefHeight="507.0" prefWidth="1110.0" style="fx-alignment: center;">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="120.66667175292969" text="id" />
+            <TableColumn fx:id="namamenu" prefWidth="181.33334350585938" text="Nama Menu" />
+            <TableColumn fx:id="harga" prefWidth="196.0" text="Harga" />
+            <TableColumn fx:id="stok" minWidth="0.0" prefWidth="122.66668701171875" text="Stok" />
+            <TableColumn fx:id="deskripsi" minWidth="0.0" prefWidth="256.0" text="Deskripsi" />
+            <TableColumn fx:id="action" prefWidth="234.0" text="Actions" />
+         </columns>
+      </TableView>
+      <Pane prefHeight="100.0" prefWidth="1368.0" style="-fx-background-color: grey;">
+         <children>
+            <Label layoutX="53.0" layoutY="21.0" prefHeight="52.0" prefWidth="123.0" text="Manager" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button layoutX="821.0" layoutY="27.0" mnemonicParsing="false" onAction="#buatmenu" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: transparent;" text="Buat Menu" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="984.0" layoutY="28.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: transparent;" text="List Menu" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="1147.0" layoutY="28.0" mnemonicParsing="false" onAction="#logout" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>
